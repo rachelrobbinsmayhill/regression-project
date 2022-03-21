@@ -88,7 +88,7 @@ Plan➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 - [x]  Create env file with log-in credentials
 - [x]  Store env file in .gitignore to ensure security of sensitive data
 - [x]  Create acquire.py module
-- [x]  Store functions needed to acquire the Telco dataset from mySQL
+- [x]  Store functions needed to acquire the Zillow dataset from mySQL
 - [x]  Ensure all imports needed to run the functions are inside the acquire.py document
 - [x]  Using Jupyter Notebook
 - [x]  Run all required imports
@@ -98,7 +98,7 @@ Plan➜ Acquire ➜ Prepare ➜ Explore ➜ Model & Evaluate ➜ Deliver
 #### 3. PREPARE
 Using Python Scripting Program (VS Code)
 - [x] Create prepare.py module
-- [x] Store functions needed to prepare the Telco data such as:
+- [x] Store functions needed to prepare the Zillow data such as:
    - [x] Split Function: to split data into train, validate, and test
    - [x] Cleaning Function: to clean data for exploration
    - [x] Encoding Function: to create numeric columns for object column
