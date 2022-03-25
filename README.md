@@ -65,7 +65,8 @@ Table of Contents
 The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below:
  
  
-Feature	Data Type	Used In	Description
+|  Variables             |    Data Type                      |  Used In       |   Definition             |
+| :--------------------:   | :-------------------------------: | | :------------:   | :--------------------: |
 airconditioningtypeid			 Type of cooling system present in the home (if any)
 architecturalstyletypeid			 Architectural style of the home (i.e. ranch, colonial, split-level, etc…)
 basementsqft			 Finished living area below or partially below ground level
