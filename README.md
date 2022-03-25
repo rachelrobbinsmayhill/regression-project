@@ -65,8 +65,40 @@ Table of Contents
 The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below:
  
  
-|  Variables             |    Data Type                                |    Definition     
-
+Feature	|	Data Type	|	Used In	|	Description
+airconditioningtypeid	|		|		|	 Type of cooling system present in the home (if any)
+architecturalstyletypeid	|		|		|	 Architectural style of the home (i.e. ranch, colonial, split-level, etc…)
+basementsqft	|		|		|	 Finished living area below or partially below ground level
+bathroomcnt	|	float64	|	Workbook	|	 Number of bathrooms in home including fractional bathrooms
+bedroomcnt	|	float64	|		|	 Number of bedrooms in home 
+buildingqualitytypeid	|		|		|	 Overall assessment of condition of the building from best (lowest) to worst (highest)
+buildingclasstypeid	|		|		|	The building framing type (steel frame, wood frame, concrete/brick) 
+threequarterbathnbr	|		|		|	 Number of 3/4 bathrooms in house (shower + sink + toilet)
+finishedfloor1squarefeet	|		|		|	 Size of the finished living area on the first (entry) floor of the home
+square_feet	|	float64	|	Workbook	|	 Calculated total finished living area of the home 
+geo_code	|	object	|	Workbook	|	 Federal Information Processing Standard code -  see https://en.wikipedia.org/wiki/FIPS_county_code for more details
+fireplaceflag	|		|		|	 Is a fireplace present in this home 
+fullbathcnt	|		|		|	 Number of full bathrooms (sink, shower + bathtub, and toilet) present in home
+hashottuborspa	|		|		|	 Does the home have a hot tub or spa
+heatingorsystemtypeid	|		|		|	 Type of home heating system
+latitude	|		|		|	 Latitude of the middle of the parcel multiplied by 10e6
+longitude	|		|		|	 Longitude of the middle of the parcel multiplied by 10e6
+lotsizesquarefeet	|		|		|	 Area of the lot in square feet
+numberofstories	|		|		|	 Number of stories or levels the home has
+parcelid	|		|	SQL Join	|	 Unique identifier for parcels (lots) 
+poolcnt	|		|		|	 Number of pools on the lot (if any)
+propertylandusetypeid	|		|	SQL Join	|	 Type of land use the property is zoned for
+propertyzoningdesc	|		|		|	 Description of the allowed land uses (zoning) for that property
+regionidcounty	|		|		|	County in which the property is located
+regionidcity	|		|		|	 City in which the property is located (if any)
+regionidzip	|		|		|	 Zip code in which the property is located
+regionidneighborhood	|		|		|	Neighborhood in which the property is located
+roomcnt	|		|		|	 Total number of rooms in the principal residence
+storytypeid	|		|		|	 Type of floors in a multi-story house (i.e. basement and main level, split-level, attic, etc.).  See tab for details.
+typeconstructiontypeid	|		|		|	 What type of construction material was used to construct the home
+yardbuildingsqft17	|		|		|	Patio in  yard
+yardbuildingsqft26	|		|		|	Storage shed/building in yard
+year_built	|	int64	|	Workbook	|	 The Year the principal residence was built 
 
 
 ## III. PROJECT PLAN - USING THE DATA SCIENCE PIPELINE:
