@@ -36,10 +36,10 @@ def get_zillow_data(use_cache=True):
     SELECT bedroomcnt AS bedrooms, 
         bathroomcnt AS bathrooms, 
         calculatedfinishedsquarefeet AS square_feet, 
-        taxvaluedollarcnt AS tax_value, 
+        taxvaluedollarcnt AS assessed_value, 
         yearbuilt AS year_built, 
         taxamount AS tax_amount, 
-        fips AS geo_code,
+        fips AS state_county_code,
         regionidcounty AS county_id
     FROM properties_2017
     JOIN predictions_2017 USING (parcelid)
