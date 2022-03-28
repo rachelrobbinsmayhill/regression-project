@@ -31,7 +31,12 @@ Table of Contents
  
 #### 1.DESCRIPTION:
 
-According to Zillow, the company has data for over 110 million U.S. homes. 80% of all U.S. homes have been viewed on Zillow regardless of their market status. Zillow has built a solid reputation around an unprecedented feature called Zestimate, which allows users to assess how much a given house is worth. The Zestimate takes in layers of data regarding a homes features and location and presents buyers and sellars with a real-time value of a home. Zillow published Zestimates for 104 million homes, updating them weekly.
+Zillow is the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help. According to the National Association of Realtors, there are over 119 million homes in the United States, over 5 million of which are sold each year. 80% of these homes have been viewed on Zillow regardless of their market status.
+
+Zillow serves the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling and more. It starts with Zillow's living database of more than 110 million U.S. homes - including homes for sale, homes for rent and homes not currently on the market, as well as Zestimate home values, Rent Zestimates and other home-related information. 
+
+The Zestimate is a key element driving webtraffic to Zillow, where sellers, buyers, agents, and curiosity-seekers gain knowledge of a home's value. In fact, over the years, Zillow has built a solid reputation around the Zestimate. The Zestimate takes in layers of data regarding a homes features and location and presents buyers and sellars with a value of a home. Zillow publishes Zestimates for 104 million homes, updating them weekly.
+
 
 This project has been requested by the Zillow Data Science Team. They currently have a model for predicting property assessed values of Single Family Properties, but would like that model improved upon. 
 
@@ -40,13 +45,10 @@ This project has been requested by the Zillow Data Science Team. They currently 
  
  
 #### 2.GOALS: 
-- [x] Construct a Machine Learning Regression Model to predict property tax assessed values of Single Family Properties using the features of the properties. 
-- [x] Find key drivers of property value for Single Family Properties.
-- [x] Deliver a report that the data science team can read through and replicate, understand what steps were taken, and what and what the outcome was. 
-- [x] Make recommendations on what works or doesn't work in predicting home values for Single Family Residences. 
+The goal of this project is to find key drivers of property value for Single Family Properties and to construct an improved Machine Learning Regression Model to predict property tax assessed values for these properties using the features of the properties. The improved model will help Zillow develop more accurate, dependable, and trustworthy Zestimates, thus sustaining and bolstering their loyal customer base. 
 
- 
- 
+Upon completion of the model, the project will make recommendations on what does and doesn't impact property values and deliver the recommendations in a report to the Data Science team at Zillow, so they can understand the process that developed the conclusion and have the information available to replicate the findings. 
+
 #### 3.INITIAL QUESTIONS:
 
 ##### Data-Focused Questions
@@ -58,11 +60,17 @@ This project has been requested by the Zillow Data Science Team. They currently 
  
 ##### Overall Project-Focused Questions
 
+- What will the end product look like?
+- What format will it be in?
+- Who will it be delivered to?
+- How will it be used?
+- How will I know I'm done?
+- What is my MVP?
+- How will I know it's good enough?
  
 
 #### 4. FORMULATING HYPOTHESES
-
-
+The project started with the hypothesis that the size and location of the property would have the greatest impact on the value of the property itself, followed by number of bedrooms and bathrooms. 
 
  
 #### 5. DELIVERABLES:
