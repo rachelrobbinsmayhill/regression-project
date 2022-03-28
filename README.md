@@ -7,8 +7,8 @@ Table of Contents
 ---
  
 * I. [Project Overview](#i-project-overview)<br>
-[1. Description](#2-description)<br>
-[2. Goals](#1-goal)<br>
+[1. Description](#1-description)<br>
+[2. Goals](#2-goals)<br>
 [3. Initial Questions](#3initial-questions)<br>
 [4. Formulating Hypotheses](#4-formulating-hypotheses)<br>
 [5. Deliverables](#5-deliverables)<br>
