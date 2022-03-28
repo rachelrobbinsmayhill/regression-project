@@ -7,8 +7,8 @@ Table of Contents
 ---
  
 * I. [Project Overview](#i-project-overview)<br>
-[1. Goals](#1-goal)<br>
-[2. Description](#2-description)<br>
+[1. Description](#2-description)<br>
+[2. Goals](#1-goal)<br>
 [3. Initial Questions](#3initial-questions)<br>
 [4. Formulating Hypotheses](#4-formulating-hypotheses)<br>
 [5. Deliverables](#5-deliverables)<br>
@@ -29,17 +29,31 @@ Table of Contents
 ## I. PROJECT OVERVIEW
  
  
-#### 1.  GOAL:
+#### 1.DESCRIPTION:
+
+According to Zillow, the company has data for over 110 million U.S. homes. 80% of all U.S. homes have been viewed on Zillow regardless of their market status. Zillow has built a solid reputation around an unprecedented feature called Zestimate, which allows users to assess how much a given house is worth. The Zestimate takes in layers of data regarding a homes features and location and presents buyers and sellars with a real-time value of a home. Zillow published Zestimates for 104 million homes, updating them weekly.
+
+This project has been requested by the Zillow Data Science Team. They currently have a model for predicting property assessed values of Single Family Properties, but would like that model improved upon. 
+
+**** To be Continued ***
 
  
  
-#### 2. DESCRIPTION:
+#### 2.GOALS: 
+- [x] Construct a Machine Learning Regression Model to predict property tax assessed values of Single Family Properties using the features of the properties. 
+- [x] Find key drivers of property value for Single Family Properties.
+- [x] Deliver a report that the data science team can read through and replicate, understand what steps were taken, and what and what the outcome was. 
+- [x] Make recommendations on what works or doesn't work in predicting home values for Single Family Residences. 
 
  
  
 #### 3.INITIAL QUESTIONS:
 
 ##### Data-Focused Questions
+
+- [x] Why do some properties have a much higher value than others when they are located so close to each other? 
+- [x] Why are some properties valued so differently from others when they have nearly the same physical attributes but only differ in location? 
+- [x] Is having 1 bathroom worse than having 2 bedrooms?
 
  
 ##### Overall Project-Focused Questions
@@ -48,15 +62,18 @@ Table of Contents
 
 #### 4. FORMULATING HYPOTHESES
 
+
+
  
 #### 5. DELIVERABLES:
+- [x] Github Repo - containing a final report (.ipynb), acquire & prepare Modules (.py), other supplemental artifacts created while working on the project (e.g. exploratory/modeling notebook(s)).
 - [x] README file - provides an overview of the project and steps for project reproduction. 
 - [x] Draft Jupyter Notebooks - provide all steps taken to produce the project.
 - [x] Python Module File - provides reproducible code for acquiring,  preparing, exploring, & testing the data.
 - [x] acquire.py - used to acquire data
 - [x] prepare.py - used to prepare data
 - [x] Report Jupyter Notebook - provides final presentation-ready assessment and recommendations.
-- [x] 5 minute presentation to stakeholders
+- [x] 5 minute presentation to stakeholders (Zillow Data Science Team. 
  
  
 ## II. PROJECT DATA CONTEXT
@@ -65,41 +82,16 @@ Table of Contents
 The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below:
  
  
-|  Variables             |    Data Type                      |  Used In       |   Definition             |
-| :--------------------:   | :-------------------------------: | | :------------:   | :--------------------: |
-airconditioningtypeid			 Type of cooling system present in the home (if any)
-architecturalstyletypeid			 Architectural style of the home (i.e. ranch, colonial, split-level, etc…)
-basementsqft			 Finished living area below or partially below ground level
-bathroomcnt	float64	Workbook	 Number of bathrooms in home including fractional bathrooms
-bedroomcnt	float64		 Number of bedrooms in home 
-buildingqualitytypeid			 Overall assessment of condition of the building from best (lowest) to worst (highest)
-buildingclasstypeid			The building framing type (steel frame, wood frame, concrete/brick) 
-threequarterbathnbr			 Number of 3/4 bathrooms in house (shower + sink + toilet)
-finishedfloor1squarefeet			 Size of the finished living area on the first (entry) floor of the home
-square_feet	float64	Workbook	 Calculated total finished living area of the home 
-geo_code	object	Workbook	 Federal Information Processing Standard code -  see https://en.wikipedia.org/wiki/FIPS_county_code for more details
-fireplaceflag			 Is a fireplace present in this home 
-fullbathcnt			 Number of full bathrooms (sink, shower + bathtub, and toilet) present in home
-hashottuborspa			 Does the home have a hot tub or spa
-heatingorsystemtypeid			 Type of home heating system
-latitude			 Latitude of the middle of the parcel multiplied by 10e6
-longitude			 Longitude of the middle of the parcel multiplied by 10e6
-lotsizesquarefeet			 Area of the lot in square feet
-numberofstories			 Number of stories or levels the home has
-parcelid		SQL Join	 Unique identifier for parcels (lots) 
-poolcnt			 Number of pools on the lot (if any)
-propertylandusetypeid		SQL Join	 Type of land use the property is zoned for
-propertyzoningdesc			 Description of the allowed land uses (zoning) for that property
-regionidcounty			County in which the property is located
-regionidcity			 City in which the property is located (if any)
-regionidzip			 Zip code in which the property is located
-regionidneighborhood			Neighborhood in which the property is located
-roomcnt			 Total number of rooms in the principal residence
-storytypeid			 Type of floors in a multi-story house (i.e. basement and main level, split-level, attic, etc.).  See tab for details.
-typeconstructiontypeid			 What type of construction material was used to construct the home
-yardbuildingsqft17			Patio in  yard
-yardbuildingsqft26			Storage shed/building in yard
-year_built	int64	Workbook	 The Year the principal residence was built 
+| Variable          | Definition                                         | Data Type |
+|:------------------|:--------------------------------------------------:|:---------:|
+| bedrooms          | number of bedrooms in the home                     | integer   |
+| bathrooms         | number of bathrooms and half-bathrooms in home     | float     |
+| county            | name of county where property exists               | object    |
+| fips              | federal information processing standards code      | integer   |
+| property_id       | unique identifier for each property                | index     |
+| square_feet       | total finished living area of the home             | float     |
+| tax_amount_usd    | property taxes based on assessed value in USD      | float     |
+| tax_value_usd *   | total tax assessed value of the property           | float     |
 
 ## III. PROJECT PLAN - USING THE DATA SCIENCE PIPELINE:
 The following outlines the process taken through the Data Science Pipeline to complete this project. 
