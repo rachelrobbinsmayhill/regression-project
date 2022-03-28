@@ -9,7 +9,7 @@ Table of Contents
 * I. [Project Overview](#i-project-overview)<br>
 [1. Description](#1-description)<br>
 [2. Goals](#2-goals)<br>
-[3. Initial Questions](#3initial-questions)<br>
+[3. Initial Questions](#3-initial-questions)<br>
 [4. Formulating Hypotheses](#4-formulating-hypotheses)<br>
 [5. Deliverables](#5-deliverables)<br>
 * II. [Project Data Context](#ii-project-data-context)<br>
@@ -18,7 +18,7 @@ Table of Contents
 [1. Project Planning](#1-plan)<br>
 [2. Data Acquisition](#2-acquire)<br>
 [3. Data Preparation](#3-prepare)<br>
-[4. Data Exploration](#4explore)<br>
+[4. Data Exploration](#4-explore)<br>
 [5. Modeling & Evaluation](#5-model--evaluate)<br>
 [6. Product Delivery](#6-delivery)<br>
 * IV. [Project Modules](#iv-project-modules)<br>
