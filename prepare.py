@@ -10,15 +10,20 @@ def wrangle_zillow(df):
     anticipation of applying arithmetic operations using it. 
     '''
     
-    convert_dict = {'geo_code': object,
+    convert_dict = {'state_county_code': object,
                 'year_built': int
                }
      
+    # drop county_id column as it is not needed due to state_county_code column
+    df = df.drop(['county_id'], axis=1)
+    
     # drop rows with nulls
     df = df.dropna(axis = 0)
     
     # convert datatypes
     df = df.astype(convert_dict)
+    
+
     
     return df
 
