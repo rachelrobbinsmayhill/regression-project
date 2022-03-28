@@ -29,7 +29,7 @@ Table of Contents
 ## I. PROJECT OVERVIEW
  
  
-#### 1.DESCRIPTION:
+#### 1. DESCRIPTION:
 
 Zillow is the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help. According to the National Association of Realtors, there are over 119 million homes in the United States, over 5 million of which are sold each year. 80% of these homes have been viewed on Zillow regardless of their market status.
 
@@ -37,19 +37,17 @@ Zillow serves the full lifecycle of owning and living in a home: buying, selling
 
 The Zestimate is a key element driving webtraffic to Zillow, where sellers, buyers, agents, and curiosity-seekers gain knowledge of a home's value. In fact, over the years, Zillow has built a solid reputation around the Zestimate. The Zestimate takes in layers of data regarding a homes features and location and presents buyers and sellars with a value of a home. Zillow publishes Zestimates for 104 million homes, updating them weekly.
 
+Although Zillow has a model to assist in predicting a home's value, they are looking to fine-tune the model and improve upon it. This project has been requested by the Zillow Data Science Team. 
 
-This project has been requested by the Zillow Data Science Team. They currently have a model for predicting property assessed values of Single Family Properties, but would like that model improved upon. 
-
-**** To be Continued ***
 
  
  
-#### 2.GOALS: 
+#### 2. GOALS: 
 The goal of this project is to find key drivers of property value for Single Family Properties and to construct an improved Machine Learning Regression Model to predict property tax assessed values for these properties using the features of the properties. The improved model will help Zillow develop more accurate, dependable, and trustworthy Zestimates, thus sustaining and bolstering their loyal customer base. 
 
 Upon completion of the model, the project will make recommendations on what does and doesn't impact property values and deliver the recommendations in a report to the Data Science team at Zillow, so they can understand the process that developed the conclusion and have the information available to replicate the findings. 
 
-#### 3.INITIAL QUESTIONS:
+#### 3. INITIAL QUESTIONS:
 
 ##### Data-Focused Questions
 
@@ -146,7 +144,7 @@ Using Jupyter Notebook
 - [x] Address missing values, data errors, unnecessary data, renaming
 - [x] Split data into train, validate, and test samples
  
-#### 4.EXPLORE
+#### 4. EXPLORE
 Using Jupyter Notebook:
 - [x] Answer key questions about hypotheses and find drivers of churn
   - Run at least two statistical tests
