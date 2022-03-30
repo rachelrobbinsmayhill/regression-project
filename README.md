@@ -86,19 +86,8 @@ The project started with the hypothesis that the size and location of the proper
 ## II. PROJECT DATA CONTEXT
  
 #### 1. DATA DICTIONARY:
-The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below:
+The final DataFrame used to explore the data for this project contains the following variables (columns).  The variables, along with their data types, are defined below in alphabetical order:
  
- 
-| Variable          | Definition                                         | Data Type |
-|:------------------|:--------------------------------------------------:|:---------:|
-| bedrooms          | number of bedrooms in the home                     | integer   |
-| bathrooms         | number of bathrooms and half-bathrooms in home     | float     |
-| county            | name of county where property exists               | object    |
-| stat_county_code  | federal information processing standards code      | integer   |
-| property_id       | unique identifier for each property                | index     |
-| square_feet       | total finished living area of the home             | float     |
-| tax_amount_usd    | property taxes based on assessed value in USD      | float     |
-| tax_value_usd *   | total tax assessed value of the property           | float     |
 
 | Variable                       | Definition                                         | Data Type |
 |:-------------------------------|:--------------------------------------------------:|:---------:|
@@ -115,9 +104,6 @@ The final DataFrame used to explore the data for this project contains the follo
 | state_county_code              | federal information processing standards code      | object    |
 | total_rooms                    | combined number of bedrooms and bathrooms          | float64   |
 | year_built                     | year the primary residence was constructed         | int64     |
-
-
-
 
 
 
