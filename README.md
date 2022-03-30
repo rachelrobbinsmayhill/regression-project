@@ -1,4 +1,4 @@
-Regression Project - Zillow -
+Regression Project - Zillow - Predicting home Values
 Codeup - Innis Cohort - March 2022
  
 ===
@@ -31,11 +31,11 @@ Table of Contents
  
 #### 1. DESCRIPTION:
 
-Zillow is the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help. According to the National Association of Realtors, there are over 119 million homes in the United States, over 5 million of which are sold each year. 80% of these homes have been viewed on Zillow regardless of their market status.
+Zillow is the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration, and knowledge about the place they call home and connecting them with the best local professionals who can help. According to the National Association of Realtors, there are over 119 million homes in the United States, over 5 million of which are sold each year. 80% of these homes have been viewed on Zillow regardless of their market status.
 
-Zillow serves the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling and more. It starts with Zillow's living database of more than 110 million U.S. homes - including homes for sale, homes for rent and homes not currently on the market, as well as Zestimate home values, Rent Zestimates and other home-related information.
+Zillow serves the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling, and more. It starts with Zillow's living database of more than 110 million U.S. homes - including homes for sale, homes for rent and homes not currently on the market, as well as Zestimate home values, Rent Zestimates, and other home-related information.
 
-The Zestimate is a key element driving webtraffic to Zillow, where sellers, buyers, agents, and curiosity-seekers gain knowledge of a home's value. In fact, over the years, Zillow has built a solid reputation around the Zestimate. The Zestimate takes in layers of data regarding a homes features and location and presents buyers and sellars with a value of a home. Zillow publishes Zestimates for 104 million homes, updating them weekly.
+The Zestimate is a key element driving web traffic to Zillow, where sellers, buyers, agents, and curiosity-seekers gain knowledge of a home's value. In fact, over the years, Zillow has built a solid reputation around the Zestimate. The Zestimate takes in layers of data regarding a home's features and location and presents buyers and sellers with a value of a home. Zillow publishes Zestimates for 104 million homes, updating them weekly.
 
 Although Zillow has a model to assist in predicting a home's value, they are looking to fine-tune the model and improve upon it. This project has been requested by the Zillow Data Science Team.
 
@@ -51,9 +51,9 @@ Upon completion of the model, the project will make recommendations on what does
 
 ##### Data-Focused Questions
 
-- [x] Is square feet of a property a driver of property value while controling for location?
+- [x] Is square feet of a property a driver of property value while controlling for location?
 - [x] Are the number of bedrooms and bathrooms a driver of the value of a property when controlling for square footage?
-- [x] Is the square footage a driver of the value of a property when controllng for bedrooms and bathrooms?
+- [x] Is the square footage a driver of the value of a property when controlling for bedrooms and bathrooms?
 - [x] Is adding a bedroom more valuable than adding square footage?
 
  
@@ -69,7 +69,7 @@ Upon completion of the model, the project will make recommendations on what does
  
 
 #### 4. FORMULATING HYPOTHESES
-The project started with the hypothesis that the size and location of the property would have the greatest impact on the value of the property itself, followed by number of bedrooms and bathrooms. 
+The project started with the hypothesis that the size and location of the property would have the greatest impact on the value of the property itself, followed by the number of bedrooms and bathrooms. 
 
  
 #### 5. DELIVERABLES:
@@ -205,3 +205,4 @@ Using Jupyter Notebook:
 - [x] Import python libraries:  pandas, matplotlib, seaborn, numpy, and sklearn
 - [x] Follow steps as outlined in the README.md. and workbook.ipynb
 - [x] Run Zillow_Report.ipynb to view the final product
+
