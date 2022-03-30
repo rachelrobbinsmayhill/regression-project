@@ -1,5 +1,4 @@
-from sklearn.model_selection import train_test_split
-import pandas as pd
+from imports import *
 import acquire
 
 def wrangle_zillow(df):
@@ -61,7 +60,7 @@ def wrangle_zillow(df):
 
 
 
-def train_validate_test_split(df, target):
+def split_data(df):
     '''
     This function drops the customer_id column and then splits a dataframe into 
     train, validate, and test in order to explore the data and to create and validate models. 
@@ -72,21 +71,15 @@ def train_validate_test_split(df, target):
     The function returns, train, validate and test dataframes. 
     '''
    
-    train, test = train_test_split(df, test_size = .2, random_state=123, stratify = df.target)   
-    train, validate = train_test_split(train, test_size=.3, random_state=123, stratify = train.target)
-
-
+    train_val, test = train_test_split(df, train_size=0.8,random_state=123)
+    train, validate = train_test_split(train_val, train_size=0.7, random_state=123)
+    
     print(f'train -> {train.shape}')
     print(f'validate -> {validate.shape}')
     print(f'test -> {test.shape}')
     
+   
     return train, validate, test
-
-
-
-
-
-
 
 
 
