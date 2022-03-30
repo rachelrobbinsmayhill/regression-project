@@ -155,7 +155,7 @@ Using Jupyter Notebook
  
 #### 4. EXPLORE
 Using Jupyter Notebook:
-- [x] Answer key questions about hypotheses and find drivers of churn
+- [x] Answer key questions about hypotheses and find drivers of tax value
   - Run at least two statistical tests
   - Document findings
 - [x] Create visualizations with intent to discover variable relationships
@@ -198,7 +198,7 @@ Using Jupyter Notebook:
 ## V. PROJECT REPRODUCTION:
 ### Steps to Reproduce
  
-- [x] You will need an env.py file that contains the hostname, username, and password of the mySQL database that contains the telco_churn database
+- [x] You will need an env.py file that contains the hostname, username, and password of the mySQL database that contains the zillow database
 - [x] Store that env file locally in the repository
 - [x] Make .gitignore and confirm .gitignore is hiding your env.py file
 - [x] Clone my repo (including the acquire.py and prepare.py)
