@@ -1,13 +1,4 @@
-# STANDARD LIBRARIES
-import os
-
-# THIRD PARTY LIBRARIES
-import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
-
-# LOCAL LIBRARIES
-import env
-
+from imports import *
 
 def get_zillow_data(use_cache=True):
     '''
@@ -37,8 +28,7 @@ def get_zillow_data(use_cache=True):
         bathroomcnt AS bathrooms, 
         calculatedfinishedsquarefeet AS square_feet, 
         taxvaluedollarcnt AS assessed_value, 
-        yearbuilt AS year_built, 
-        taxamount AS tax_amount, 
+        yearbuilt AS year_built,  
         fips AS state_county_code,
         regionidcounty AS county_id
     FROM properties_2017
@@ -51,7 +41,6 @@ def get_zillow_data(use_cache=True):
     
     '''
             
-
     print('Getting a fresh copy from SQL database...')
     df = pd.read_sql(query, url)
     print('Saving to csv...')

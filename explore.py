@@ -1,5 +1,4 @@
-import seaborn as sns
-from sklearn.preprocessing import MinMaxScaler
+from imports import *
 
 
 # create a function that takes in a dataframe
