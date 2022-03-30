@@ -33,11 +33,11 @@ Table of Contents
 
 Zillow is the leading real estate and rental marketplace dedicated to empowering consumers with data, inspiration and knowledge around the place they call home, and connecting them with the best local professionals who can help. According to the National Association of Realtors, there are over 119 million homes in the United States, over 5 million of which are sold each year. 80% of these homes have been viewed on Zillow regardless of their market status.
 
-Zillow serves the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling and more. It starts with Zillow's living database of more than 110 million U.S. homes - including homes for sale, homes for rent and homes not currently on the market, as well as Zestimate home values, Rent Zestimates and other home-related information. 
+Zillow serves the full lifecycle of owning and living in a home: buying, selling, renting, financing, remodeling and more. It starts with Zillow's living database of more than 110 million U.S. homes - including homes for sale, homes for rent and homes not currently on the market, as well as Zestimate home values, Rent Zestimates and other home-related information.
 
 The Zestimate is a key element driving webtraffic to Zillow, where sellers, buyers, agents, and curiosity-seekers gain knowledge of a home's value. In fact, over the years, Zillow has built a solid reputation around the Zestimate. The Zestimate takes in layers of data regarding a homes features and location and presents buyers and sellars with a value of a home. Zillow publishes Zestimates for 104 million homes, updating them weekly.
 
-Although Zillow has a model to assist in predicting a home's value, they are looking to fine-tune the model and improve upon it. This project has been requested by the Zillow Data Science Team. 
+Although Zillow has a model to assist in predicting a home's value, they are looking to fine-tune the model and improve upon it. This project has been requested by the Zillow Data Science Team.
 
 
  
@@ -51,9 +51,10 @@ Upon completion of the model, the project will make recommendations on what does
 
 ##### Data-Focused Questions
 
-- [x] Why do some properties have a much higher value than others when they are located so close to each other? 
-- [x] Why are some properties valued so differently from others when they have nearly the same physical attributes but only differ in location? 
-- [x] Is having 1 bathroom worse than having 2 bedrooms?
+- [x] Is square feet of a property a driver of property value while controling for location?
+- [x] Are the number of bedrooms and bathrooms a driver of the value of a property when controlling for square footage?
+- [x] Is the square footage a driver of the value of a property when controllng for bedrooms and bathrooms?
+- [x] Is adding a bedroom more valuable than adding square footage?
 
  
 ##### Overall Project-Focused Questions
@@ -93,11 +94,33 @@ The final DataFrame used to explore the data for this project contains the follo
 | bedrooms          | number of bedrooms in the home                     | integer   |
 | bathrooms         | number of bathrooms and half-bathrooms in home     | float     |
 | county            | name of county where property exists               | object    |
-| fips              | federal information processing standards code      | integer   |
+| stat_county_code  | federal information processing standards code      | integer   |
 | property_id       | unique identifier for each property                | index     |
 | square_feet       | total finished living area of the home             | float     |
 | tax_amount_usd    | property taxes based on assessed value in USD      | float     |
 | tax_value_usd *   | total tax assessed value of the property           | float     |
+
+| Variable                       | Definition                                         | Data Type |
+|:-------------------------------|:--------------------------------------------------:|:---------:|
+| assessed_value                 | total tax assessed value of the property           | float64   |
+| bathroom_bins                  | grouped bins, based upon number of bedrooms        | category  |
+| bathrooms                      | number of bathrooms and half-bathrooms in home     | float64   |
+| bedroom_bins                   | grouped bins, based upon number of bedrooms        | category  |
+| bedrooms                       | number of bedrooms in the home                     | float64   |
+| county_code_bin                | name of county as assigned by state_county_code    | category  |
+| county_code_bin_Orange County  | numeric variable representing county_code_bin      | uint8     |
+| county_code_bin_Ventura County | numeric variable representing county_code_bin      | uint8     |
+| home_sizes                     | grouped bins, based upon square footage            | category  |
+| square_feet                    | total finished living area of the home             | float64   |
+| state_county_code              | federal information processing standards code      | object    |
+| total_rooms                    | combined number of bedrooms and bathrooms          | float64   |
+| year_built                     | year the primary residence was constructed         | int64     |
+
+
+
+
+
+
 
 ## III. PROJECT PLAN - USING THE DATA SCIENCE PIPELINE:
 The following outlines the process taken through the Data Science Pipeline to complete this project. 
@@ -150,7 +173,7 @@ Using Jupyter Notebook:
   - Run at least two statistical tests
   - Document findings
 - [x] Create visualizations with intent to discover variable relationships
-  - Identify variables related _______________
+  - Identify variables related to property values
   - Identify any potential data integrity issues
 - [x] Summarize conclusions, provide clear answers, and summarize takeaways
   - Explain plan of action as deduced from work to this point
@@ -194,5 +217,5 @@ Using Jupyter Notebook:
 - [x] Make .gitignore and confirm .gitignore is hiding your env.py file
 - [x] Clone my repo (including the acquire.py and prepare.py)
 - [x] Import python libraries:  pandas, matplotlib, seaborn, numpy, and sklearn
-- [x] Follow steps as outlined in the README.md. and Churn_Work.ipynb
+- [x] Follow steps as outlined in the README.md. and workbook.ipynb
 - [x] Run Zillow_Report.ipynb to view the final product
