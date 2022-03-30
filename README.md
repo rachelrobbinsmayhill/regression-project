@@ -1,4 +1,4 @@
-Regression Project - Zillow - Predicting home Values
+Regression Project - Zillow - Predicting Home Values
 Codeup - Innis Cohort - March 2022
  
 ===
